@@ -11,11 +11,13 @@ function Feed() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    setVideos(null);
+    setVideos([]);
 
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
       .then((data) => setVideos(data.items))
     }, [selectedCategory]);
+
+    
 
   return (
     <Stack sx={{flexDirection:{sx:"column", md:"row"}}}>

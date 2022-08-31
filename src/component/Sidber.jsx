@@ -3,7 +3,7 @@ import { Stack } from '@mui/material'
 import { categories } from '../utilits/constans'
 
 const Sidber = ({setSelectedCategory,selectedCategory}) => {
-    const catagoryselect = 'New';
+    // const catagoryselect = 'New';
   return (
     <Stack
     direction="row"

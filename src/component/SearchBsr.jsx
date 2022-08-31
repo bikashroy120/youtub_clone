@@ -10,11 +10,11 @@ const SearchBar = () => {
   const onhandleSubmit = (e) => {
     e.preventDefault();
 
-    // if (searchTerm) {
-    //   navigate(`/search/${searchTerm}`);
+    if (searchTerm) {
+      navigate(`/search/${searchTerm}`);
 
-    //   setSearchTerm('');
-    // }
+      setSearchTerm('');
+    }
   };
 
   return (
